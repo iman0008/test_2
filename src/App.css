@@ -1,38 +1,106 @@
-.App {
+/* App styles */
+.app-container {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
+  margin: 50px auto;
+  font-family: Arial, sans-serif;
+}
+
+.app-title {
   text-align: center;
+  margin-bottom: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* TaskInput styles */
+.task-input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.task-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  color: #000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.add-button,
+.clear-button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-button {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.clear-button {
+  background-color: #f44336;
+  color: #fff;
+}
+
+/* TaskList styles */
+.task-list {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+
+/* TaskItem styles */
+.task-item {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.task-text {
+  flex: 1;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-edit-input {
+  flex: 1;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  color: #000;
 }
+
+.edit-button,
+.delete-button,
+.save-button,
+.cancel-button {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.edit-button {
+  background-color: #ff9800;
+}
+
+.delete-button {
+  background-color: #f44336;
+}
+
+.save-button {
+  background-color: #4caf50;
+}
+
+.cancel-button {
+  background-color: #9e9e9e;
+}
+
